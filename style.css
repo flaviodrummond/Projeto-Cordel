@@ -1,0 +1,99 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Russo One', sans-serif;
+    --fonte3: 'Courgette', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0PX;
+}
+
+html, body {
+    font-family: var(--fonte1);
+    min-height: 100vh; /* Tamanho mínimo do corpo do site */
+    background-color: darkgray;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    font-family: var(--fonte2);
+    font-size: 7vw; /* em: Aumentando o tamanho da letra, já a vw, ajusta conforme a tela */
+    padding-top: 50px; /* Espaçamento do topo do texto */
+    /* text-transform: uppercase; Trnasforma em letra Maiúscula gritante */
+    font-variant: small-caps; /* Transforma em letras Maiúscula mais natural*/
+}
+
+header > p {
+    padding-bottom: 50px; /* Espaçamento em baixo do texto */
+}
+
+header a, footer a {
+    color: white; /* Trocar a cor da letra */
+    text-decoration: none; /* Tirar o sublinhado do link */
+    font-weight: bolder; /* Colocar negrito */
+}
+
+section {
+    font-family: var(--fonte3);
+    font-size: 2.5vw;
+    padding-top: 10vh; /* Espaçamento em cima de 10% da altura */
+    padding-bottom: 10vw; /* Espaçamento em baixo de 10% de altura */
+    line-height: 2em; /* Espaçamento duplo da frase de baixo para a de cima */
+    padding-left: 30px; /* Espaçamento da esquerda para a direita */
+}
+
+section > p {
+    padding-bottom: 2em;
+    padding: 10px;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(60, 63, 63);
+    color: white;
+    box-shadow: inset 6px 6px 10px 0px rgba(0, 0, 0, 0.425); /* Sombra interna */
+    background-attachment: fixed;
+}
+
+section#img01 {
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+}
+
+section#img02 {
+    background-image: url(imagens/background002.jpg);
+    background-position: right center;
+    background-size: cover;
+}
+
+section.imagem > p {
+    width: 400px; /* Tamanho da caixa */
+    background-color: rgba(0, 0, 0, 0.253); /* Caixa dentro do paragrafo de imagem */
+    text-shadow: 1px 1px 0px black; /* Colocar sombreado na letra */
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline; /* Colocando o mouse em cima do link, fica sublinhado */
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center; /* Centralizar o texto */
+    padding: 10px;
+}
